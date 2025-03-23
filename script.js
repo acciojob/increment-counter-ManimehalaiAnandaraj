@@ -3,7 +3,7 @@ const counterdisplay=document.getElementById("counter");
 		const incrementbutton=document.getElementById("incrementBtn");
 			let count=0;
 		incrementbutton.addEventListener("click",function(){
-			alert("Before increment: " + count);
+			alert( count);
 			count++;
 			counterdisplay.textContent=count;	
 		});
