@@ -8,7 +8,18 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<p id="counter">0	</p>
+		<button id="incrementbtn">Increment</button>
+
     <script type="text/javascript" src="./script.js">
+	let count=0;
+		const counterdisplay=document.getElementById("counter");
+		const incrementbutton=document.getElementById("incrementbtn");
+		incrementbutton.addEventListener("click",function () {
+			alert("Before increment: " + count);
+			count++;
+			counterdisplay.textContent=count;	
+		});
 </script>
 
 </body>
